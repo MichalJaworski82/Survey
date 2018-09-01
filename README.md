@@ -1,2 +1,0 @@
-# Survey
-Survey (Angular/Firebase)
