@@ -1,0 +1,47 @@
+<div class="container-fluid">
+<div class= "row">
+  <div class= "col-sm-2 dark-blue"></div>
+  <div class= "col-sm-2 ld-blue"></div>
+  <div class = "col-sm-4 main">
+
+      <div class = "col-sm-7">
+       <div class= "addQuestion">
+          <mat-form-field  class="example-full-width newQuestionInput">
+            <input matInput placeholder="Add new Question" (keyup.enter)= "addQ(question)" #question>
+          </mat-form-field>
+       </div>
+      </div>
+
+      <ul class="list-group">
+        <div *ngFor = "let question of questions$| async">  
+                {{question.name}}
+          <button class="btn btn-danger btn-sm" (click)="deleteQ(question)">Delete</button>
+          <button class="btn btn-secondary btn-sm" (click)="updateQ(question, questionZ)">Update</button>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="update Question" #questionZ>
+          </mat-form-field>
+        
+          <ul class="list-group"> 
+            <div *ngFor = "let answer of answers$| async">
+              <div class = "row myRow" *ngIf="answer.questionkey==question.key">
+                <div class = "col-sm-8" >
+                <li  class ="list-group-item" >{{answer.name}} </li>
+              </div>
+                  <button class="btn btn-danger btn-sm" (click)="deleteA(answer)">Delete</button>
+              </div>
+            </div>
+          
+          </ul>
+        
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="add answer" (keyup.enter)= "addA(question, answer)" #answer>
+           </mat-form-field>
+        
+       </div>
+      </ul>
+</div>
+  <div class= "col-sm-2 ld-blue2"></div>
+  <div class= "col-sm-2 dark-blue"></div>
+</div>
+</div>
+

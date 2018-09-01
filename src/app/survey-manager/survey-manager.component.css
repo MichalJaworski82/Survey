@@ -1,0 +1,54 @@
+.newQuestionInput{
+  min-width: 20rem;
+}
+
+.myRow{
+  padding:0.15rem;
+}
+
+.btn-sm{
+  margin-left:0.25rem;
+}
+
+.dark-blue{
+  background-color: #938fa8;
+}
+
+
+.ld-blue{
+  background-image: linear-gradient(to right, #938fa8, #dad7e8);
+}
+.ld-blue2{
+  background-image: linear-gradient(to right, #dad7e8,#938fa8);
+}
+
+.main{
+  padding-left: 6rem;
+  background-color: #dad7e8;
+  min-height: 75rem;
+}
+
+mat-form-field{
+  margin-left:0.5rem;
+}
+
+.list-group{
+  font-weight:bold;
+}
+
+.list-group-item{
+  background-color: #dad7e8;
+  font-weight:normal;
+ height: 2.8rem;
+}
+
+.list-group-item:hover{
+  font-weight:bold;
+  background-color:  #938fa8
+}
+
+.addQuestion{
+ 
+  margin : 2rem;
+}
+

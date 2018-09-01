@@ -1,0 +1,45 @@
+
+mat-checkbox{
+float:right;
+}
+
+.list-group-item{
+    background-color: #dad7e8;
+}
+
+.list-group-item-action:hover{
+    font-weight:bold;
+    background-color:  #938fa8
+}
+
+.question-name{
+    font-weight:bold;
+    padding:0.5rem;
+    font-size: 1.2rem;
+}
+.mat-raised-button{
+    background-color:#124aa5;
+    color:white;
+}
+
+.dark-blue{
+    background-color: #938fa8;
+    min-height: 75rem;
+  }
+  
+  .ld-blue{
+    background-image: linear-gradient(to right, #938fa8, #dad7e8);
+  }
+  .ld-blue2{
+    background-image: linear-gradient(to right, #dad7e8,#938fa8);
+  }
+  
+  .main{
+    background-color: #dad7e8;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .submit-button-div{
+      padding: 1rem;
+  }

@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class = "row">
+  <div class = "col-sm-3">
+   <div class="list-group" >
+      <button class="button btn btn-secondary btn-block"  *ngFor="let q of questions$|async" (click)="drawCharts(q.key, q.name)" >{{ q.name }}</button> 
+    </div> 
+  </div>
+  <div class = "col-sm-9">
+<div class = "row">
+  <div class = "col-sm-2 navv" (click)="changeToPieChart()">PieChart</div>
+  <div class = "col-sm-2 navv" (click)="changeToBarChart()">BarChart</div>
+  </div>
+
+    <div id ="pieChartContainer" [hidden]="!isPie"> 
+      <canvas id="pieChart" class="charts-js-render-monitor"></canvas>
+    </div>
+
+    <div id ="barChartContainer" [hidden]="isPie"> 
+      <canvas id="barChart" class="charts-js-render-monitor"></canvas>
+    </div>
+  </div>
+</div>
+

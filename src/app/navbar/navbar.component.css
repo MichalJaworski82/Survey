@@ -1,0 +1,14 @@
+.navbar-expand-lg{
+  background-color: #2b2451;
+}
+
+.nav-link{
+    color:#cbc7e0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight:bold;
+}
+
+.nav-link:hover{
+   color:white;
+}

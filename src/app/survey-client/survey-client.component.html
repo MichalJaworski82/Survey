@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class= "row">
+        <div class= "col-sm-2 dark-blue"></div>
+        <div class= "col-sm-2 ld-blue"></div>
+        <div class = "col-sm-4 main">
+          <form #f="ngForm">
+            <ul class="list-group">
+              <li class ="list-group-item" *ngFor = "let question of questions$| async">
+                <div class="question-name">
+                {{question.name}}
+                </div>
+                <ul class="list-group">
+                <div *ngFor = "let answer of answers$| async">
+                  <div class= "row" *ngIf="answer.questionkey==question.key" >
+                    <div class="col-sm-12" @fadeIn>
+                  <li class="list-group-item list-group-item-action">{{answer.name}} <mat-checkbox color="primary" (change)="addAKeyACount(answer.key, answer.count)"></mat-checkbox></li>
+                    </div>
+                </div>
+                </div>
+                  </ul>
+              </li>
+            </ul>
+            <input required type = "checkbox" ngModel name="hasAgreed"> I agree to terms of survey
+
+
+            <div class="submit-button-div">
+            <button mat-raised-button (click)="submit(f)" [disabled]="!f.valid">Submit</button>
+            </div>
+          </form>
+
+       </div>
+      <div class= "col-sm-2 ld-blue2"></div>
+      <div class= "col-sm-2 dark-blue"></div>
+    </div>
+</div>

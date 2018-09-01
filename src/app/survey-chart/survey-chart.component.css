@@ -1,0 +1,33 @@
+.charts-js-render-monitor{
+display:block;
+}
+
+.container-fluid{
+    background-color: #dad7e8;
+    min-height: 75rem;
+}
+
+.list-group{
+    margin-top: 1rem;
+}
+
+
+.col-sm-3{
+    border-right: 1px solid grey;
+    min-height: 75rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+}
+
+.navv{
+    background-color: #5a7299;
+    border: 1px solid white;
+    min-width: 2rem;
+    min-height: 2rem;
+    font-weight: bold;
+    color:white;
+}
+
+.navv:hover{
+    background-color: #354051;
+}
